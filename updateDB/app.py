@@ -81,13 +81,13 @@ def home():
     from qdrant_client.models import Distance, VectorParams 
      
     client.recreate_collection( 
-        collection_name="collection2", 
+        collection_name="CASTLE-VERSE", 
         vectors_config=VectorParams(size=1536, distance=Distance.COSINE), 
     )
 
     vector_store = Qdrant(
      client=client,
-     collection_name="collection2",
+     collection_name="CASTLE-VERSE",
      embeddings=OpenAIEmbeddings(),
        )
     print(vector_store)
@@ -109,7 +109,7 @@ def hello1():
     )
   vector_store = Qdrant(
     client=client,
-    collection_name="collection2",
+    collection_name="CASTLE-VERSE",
     embeddings=OpenAIEmbeddings(),
   )
   print(vector_store)
@@ -153,7 +153,7 @@ def hello1():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
 
 
