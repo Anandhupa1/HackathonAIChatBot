@@ -1,2 +1,2 @@
-# HackathonAIChatBot
-AI chat bot for hackathon
+# hackathonAIMiniServerForUpdation
+Hackathon ai chatbot mini server for updating vector database
